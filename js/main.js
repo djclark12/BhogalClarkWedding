@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
 	navigation.find('#showplaces').on('click',function(e){
 		e.preventDefault();
 		$('.places-to-visit').fadeIn(1000);
-	
+		$('#contactinfo').fadeOut(1000);
 	});
 	navigation.find('#contactus').on('click',function(e){
 		e.preventDefault();
@@ -54,6 +54,7 @@ jQuery(document).ready(function ($) {
 				navigationTrigger.removeClass('nav-visible');
 				navigation.removeClass('nav-clickable nav-visible');
 				$('.places-to-visit').fadeOut(500);
+				$('#contactinfo').fadeOut(500);
 				if (transitionsNotSupported) projectPreviews.removeClass('slide-out');
 				else slideToggleProjects(projectsPreviewWrapper.children('li'), -1, 0, false);
 			} else {

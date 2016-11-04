@@ -755,12 +755,14 @@ li.selected .cd-project-title,
   display: table-cell;
   vertical-align: middle;
 }
+.cd-primary-nav #contactinfo{
+  display: table-cell;
+  vertical-align: middle;
+}
 .cd-primary-nav a {
  display: block;
 }
-.no-touch .cd-primary-nav a:hover {
-  background-color: #a8ae7e;
-}
+
 .cd-primary-nav .cd-label {
   position: relative;
   margin: 2.4em 0 2em;
