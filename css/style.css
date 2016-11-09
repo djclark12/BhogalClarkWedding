@@ -557,7 +557,14 @@ li.selected .cd-project-title,
     transform: translateX(150%);
   }
 }
-
+@media screen and (min-width: 480){
+  .cd-project-title{
+    top: calc(50% - 30px);
+  }
+  .cd-project-title h2{
+    font-size: 50%;
+  }
+}
 .cd-projects li.selected .cd-project-title::after {
   -webkit-transition: -webkit-transform 0.3s 0s;
   -moz-transition: -moz-transform 0.3s 0s;
@@ -622,10 +629,6 @@ li.selected .cd-project-title,
   width: 350px;
   background-color: #ffffff;
   line-height: 350px;
-}
-
-.cd-project-info iframe {
-    padding-top: 5px;
 }
 
 .cd-projects-container .scroll {
